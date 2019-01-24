@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+	<Appenders>
+		<Console name="console" target="SYSTEM_OUT">
+			<PatternLayout pattern="%d{ISO8601} | %-5.5p | %-30.30c{1.} %4L | %m%n"/>
+		</Console>
+	</Appenders>
+	<Loggers>
+   		<!-- Logger configuration for Spring to ignore enha nce warning on application at startup -->
+		<Logger name="org.springframework.context.annotation.ConfigurationClassPostProcessor" level="ERROR" additivity="false">
+			<AppenderRef ref="console"/>
+		</Logger>
+   		
+   		<!-- Logger configuration for Drools XML Parser to ignore binding error for jBPM process -->
+		<Logger name="org.drools.core.xml.ExtensibleXmlParser" level="FATAL" additivity="false">
+			<AppenderRef ref="console"/>
+		</Logger>
+  		
+  		<!-- level=TRACE to activate SQL trace -->
+		<Logger name="org.hibernate.SQL" level="ERROR" additivity="false">
+			<AppenderRef ref="console"/>
+		</Logger>
+
+		<Root level="INFO">
+			<AppenderRef ref="console"/>
+		</Root>
+	</Loggers>
+</Configuration>
