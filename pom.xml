@@ -100,6 +100,16 @@
 				<artifactId>jacoco-maven-plugin</artifactId>
 				<version>0.8.3</version>
 				<configuration>
+				    <rule implementation="org.jacoco.maven.RuleConfiguration">
+                    <element>PACKAGE</element>
+                    <limits>
+                        <limit implementation="org.jacoco.report.check.Limit">
+                            <counter>COMPLEXITY</counter>
+                            <value>COVEREDRATIO</value>
+                            <minimum>0.00</minimum>
+                        </limit>
+                    </limits>
+                </rule>
 					<excludes>
 						<exclude>**/model/*</exclude>
 					</excludes>
