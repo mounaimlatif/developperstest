@@ -89,6 +89,12 @@
 				<groupId>org.jacoco</groupId>
 				<artifactId>jacoco-maven-plugin</artifactId>
 				<version>0.8.3</version>
+				<configuration>
+					<excludes>
+						<exclude>**/com/jcdecaux/recruiting/developpers/model/*</exclude>
+						<exclude>com/jcdecaux/recruiting/developpers/model/*</exclude>
+					</excludes>
+				</configuration>
 				<executions>
 					<!--
                         Prepares the property pointing to the JaCoCo runtime agent which
