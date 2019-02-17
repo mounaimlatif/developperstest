@@ -17,8 +17,6 @@
 
 	<properties>
 		<java.version>1.8</java.version>
-		<sonar.coverage.exclusions>**/com/jcdecaux/recruiting/developpers/controller/*,com/jcdecaux/recruiting/developpers/controller/*</sonar.coverage.exclusions>
-        <sonar.jacoco.excludes>**/com/jcdecaux/recruiting/developpers/controller/*</sonar.jacoco.excludes>
 	</properties>
 
 	<dependencies>
@@ -89,11 +87,6 @@
 				<groupId>org.jacoco</groupId>
 				<artifactId>jacoco-maven-plugin</artifactId>
 				<version>0.8.3</version>
-				<configuration>
-					<excludes>
-						<exclude>com/jcdecaux/recruiting/developpers/controller/*</exclude>
-					</excludes>
-				</configuration>
 				<executions>
 					<!--
                         Prepares the property pointing to the JaCoCo runtime agent which
