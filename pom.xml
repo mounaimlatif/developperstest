@@ -20,20 +20,14 @@
 		<sonar.coverage.exclusions>**/com/jcdecaux/recruiting/developpers/model/*,com/jcdecaux/recruiting/developpers/model/*</sonar.coverage.exclusions>
         <sonar.jacoco.excludes>**/com/jcdecaux/recruiting/developpers/model/*</sonar.jacoco.excludes>
     <sonar.exclusions>
-        **/generated/**/*,
-        **/model/**/*,
-		**/com/jcdecaux/recruiting/developpers/model/*,
-		com/jcdecaux/recruiting/developpers/model/*
+       **/model/*
     </sonar.exclusions>
     <sonar.test.exclusions>
-        src/test/**/*
+        **/model/*
     </sonar.test.exclusions>
     <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
     <sonar.coverage.exclusions>
-        **/generated/**/*,
-        **/model/**/*,
-		**/com/jcdecaux/recruiting/developpers/model/*,
-		com/jcdecaux/recruiting/developpers/model/*
+       **/model/*
     </sonar.coverage.exclusions>
 	</properties>
 
@@ -107,8 +101,7 @@
 				<version>0.8.3</version>
 				<configuration>
 					<excludes>
-						<exclude>**/com/jcdecaux/recruiting/developpers/model/*</exclude>
-						<exclude>com/jcdecaux/recruiting/developpers/model/*</exclude>
+						<exclude>**/model/*</exclude>
 					</excludes>
 				</configuration>
 				<executions>
