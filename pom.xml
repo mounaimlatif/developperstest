@@ -19,6 +19,23 @@
 		<java.version>1.8</java.version>
 		<sonar.coverage.exclusions>**/com/jcdecaux/recruiting/developpers/model/*,com/jcdecaux/recruiting/developpers/model/*</sonar.coverage.exclusions>
         <sonar.jacoco.excludes>**/com/jcdecaux/recruiting/developpers/model/*</sonar.jacoco.excludes>
+    <sonar.exclusions>
+        **/generated/**/*,
+        **/model/**/*,
+		**/com/jcdecaux/recruiting/developpers/model/*,
+		com/jcdecaux/recruiting/developpers/model/*
+    </sonar.exclusions>
+    <sonar.test.exclusions>
+        src/test/**/*
+    </sonar.test.exclusions>
+    <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
+    <sonar.coverage.exclusions>
+        **/generated/**/*,
+        **/model/**/*,
+		**/com/jcdecaux/recruiting/developpers/model/*,
+		com/jcdecaux/recruiting/developpers/model/*
+    </sonar.coverage.exclusions>
+</properties>
 	</properties>
 
 	<dependencies>
