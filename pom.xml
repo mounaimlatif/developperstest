@@ -17,18 +17,17 @@
 
 	<properties>
 		<java.version>1.8</java.version>
-		<sonar.coverage.exclusions>**/com/jcdecaux/recruiting/developpers/model/*,com/jcdecaux/recruiting/developpers/model/*</sonar.coverage.exclusions>
-        <sonar.jacoco.excludes>**/com/jcdecaux/recruiting/developpers/model/*</sonar.jacoco.excludes>
-    <sonar.exclusions>
-       **/model/*
-    </sonar.exclusions>
-    <sonar.test.exclusions>
-        **/model/*
-    </sonar.test.exclusions>
-    <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
-    <sonar.coverage.exclusions>
-       **/model/*
-    </sonar.coverage.exclusions>
+		<sonar.projectKey>jcdecauxtest</sonar.projectKey>
+		<sonar.host.url>http://localhost:9000</sonar.host.url>
+		<sonar.login>94dcdd234a206546f30c921adc20dc23854bb81f</sonar.login>
+		<sonar.projectName>com.jcdecaux.recruiting.developpers</sonar.projectName>
+		<sonar.projectVersion>1.0</sonar.projectVersion>
+		<sonar.sources>src</sonar.sources>
+		<sonar.java.binaries>target/classes</sonar.java.binaries>
+		<sonar.sourceEncoding>UTF-8</sonar.sourceEncoding>
+		<sonar.exclusions>**/model/*</sonar.exclusions>
+		<sonar.test.exclusions>**/model/*</sonar.test.exclusions>
+		<sonar.coverage.exclusions>**/model/*</sonar.coverage.exclusions>
 	</properties>
 
 	<dependencies>
