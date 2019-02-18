@@ -17,6 +17,7 @@
 
 	<properties>
 		<java.version>1.8</java.version>
+		<sonar.sources>src</sonar.sources>
 		</properties>
 
 	<dependencies>
