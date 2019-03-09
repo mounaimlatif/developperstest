@@ -17,7 +17,17 @@
 
 	<properties>
 		<java.version>1.8</java.version>
-		<sonar.sources>src</sonar.sources>
+
+        <sonar.projectKey>jcdecauxtest2</sonar.projectKey>
+        <sonar.host.url>http://localhost:9000</sonar.host.url>
+        <sonar.projectName>com.jcdecaux.recruiting.developpers2</sonar.projectName>
+        <sonar.projectVersion>1.0</sonar.projectVersion>
+        <sonar.coverage.exclusions>**/model/*,**/service/*,**/validator/*,**/service/**</sonar.coverage.exclusions>
+        <sonar.cpd.exclusions>**/model/*,**/service/*,**/validator/*,**/service/**</sonar.cpd.exclusions>
+        <sonar.test.inclusions>*/test/**</sonar.test.inclusions>
+        <sonar.sources>src</sonar.sources>
+        <sonar.java.binaries>target/classes</sonar.java.binaries>
+        <sonar.sourceEncoding>UTF-8</sonar.sourceEncoding>
 		</properties>
 
 	<dependencies>
@@ -89,16 +99,6 @@
 				<artifactId>jacoco-maven-plugin</artifactId>
 				<version>0.8.3</version>
 				<configuration>
-				    <rule implementation="org.jacoco.maven.RuleConfiguration">
-                    <element>PACKAGE</element>
-                    <limits>
-                        <limit implementation="org.jacoco.report.check.Limit">
-                            <counter>COMPLEXITY</counter>
-                            <value>COVEREDRATIO</value>
-                            <minimum>0.00</minimum>
-                        </limit>
-                    </limits>
-                </rule>
 					<excludes>
 						<exclude>**/model/*</exclude>
 					</excludes>
