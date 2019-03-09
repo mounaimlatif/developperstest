@@ -18,10 +18,7 @@
 	<properties>
 		<java.version>1.8</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <sonar.projectKey>jcdecauxtest</sonar.projectKey>
-        <sonar.projectName>jcdecauxtest</sonar.projectName>
-        <sonar.projectVersion>1.0</sonar.projectVersion>
-        <sonar.coverage.exclusions>**/model/*,**/service/*,**/validator/*,**/service/**</sonar.coverage.exclusions>
+      	<sonar.coverage.exclusions>**/model/*,**/service/*,**/validator/*,**/service/**</sonar.coverage.exclusions>
         <!--sonar.cpd.exclusions>**/model/*,**/service/*,**/validator/*,**/service/**</sonar.cpd.exclusions-->
         <sonar.test.inclusions>*/test/**</sonar.test.inclusions>
         <sonar.sources>src</sonar.sources>
