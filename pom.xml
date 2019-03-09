@@ -17,7 +17,7 @@
 
 	<properties>
 		<java.version>1.8</java.version>
-
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <sonar.projectKey>jcdecauxtest</sonar.projectKey>
         <sonar.host.url>http://localhost:9000</sonar.host.url>
         <sonar.projectName>jcdecauxtest</sonar.projectName>
@@ -72,6 +72,11 @@
 
 	<build>
 		<plugins>
+			<plugin>
+				<groupId>org.sonarsource.scanner.maven</groupId>
+				<artifactId>sonar-maven-plugin</artifactId>
+				<version>3.6.0.1398</version>
+			</plugin>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
